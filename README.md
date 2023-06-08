@@ -3,8 +3,10 @@ Metabase for ARM64
 
 Taken from https://github.com/metabase/metabase/issues/13119 
 
-- Make sure you're in the directory with the `Dockerfile`.
+## Getting Started
 
+- Clone this repository
+- Make sure you're in the directory with the `Dockerfile`.
 - Build the image:
 
 ```
@@ -12,7 +14,6 @@ docker build -t yourimagename .
 ```
 
 - Run the container:
-
 ```
 docker run -d -p 3000:3000 --name metabase yourimagename
 ```
@@ -53,5 +54,6 @@ EXPOSE 3000
 # run it
 ENTRYPOINT ["/app/run_metabase.sh"]
 ```
+- Access Metabase at `http://<IP of your machine>:3000` and run through the configuration prompts
 
 - Making sure to specify Ubuntu version, etc. 
